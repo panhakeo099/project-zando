@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* background-color: cadetblue; */
+}
+.menu {
+  margin-top: 0;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+
+  list-style-type: none;
+}
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 10px;
+  margin-top: 10px;
+}
+.title-b {
+  /* background-color: pink; */
+  text-align: left;
+}
+.title-b h1 {
+  font-size: 20px;
+}
+.title-b p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.item-box {
+  height: 150px;
+  /* background-color: orange; */
+  padding: 5px;
+}
+.item-box .box {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  gap: 5px;
+}
+.item-box .box .img-box {
+  width: 45%;
+  height: 100%;
+}
+.item-box .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-box .box .txt-box {
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+.item-box .box .txt-box h1 {
+  margin: 0;
+  font-size: 15px;
+}
+.item-box .box .txt-box p {
+  font-size: 15px;
+  margin: 0;
+}
+.item-box .box .txt-box .btn {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  text-decoration: none;
+  background-color: cadetblue;
+  padding: 5px 8px;
+  font-size: 15px;
+  color: white;
+  border-radius: 2px;
+}
+
+@media (min-width: 576px) {
+  .menu ul li a {
+    font-size: 15px;
+  }
+  .item-box {
+    height: 300px;
+  }
+  .item-box .box .img-box {
+    width: 100%;
+    height: 60%;
+  }
+  .item-box .box .txt-box {
+    width: 100%;
+    height: 40%;
+    position: relative;
+  }
+  .item-box .box {
+    flex-direction: column;
+    gap: 0;
+  }
+  .item-box .box .txt-box .btn {
+    right: auto;
+    left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .title-b {
+    text-align: center;
+  }
+  .item-box .box .img-box {
+    width: 100%;
+    height: 60%;
+  }
+  .item-box .box .txt-box {
+    width: 100%;
+    height: 40%;
+    position: relative;
+  }
+  .item-box .box .txt-box .btn {
+    bottom: 20px;
+  }
+}
+@media (min-width: 998px) {
+  .item-box .box .img-box {
+    width: 100%;
+    height: 55%;
+  }
+  .item-box .box .txt-box {
+    width: 100%;
+    height: 45%;
+    position: relative;
+  }
+}
+@media (min-width: 1200px) {
+  .item-box .box .img-box {
+    width: 100%;
+    height: 55%;
+  }
+  .item-box .box .txt-box {
+    width: 100%;
+    height: 45%;
+    position: relative;
+  }
+}
+@media (min-width: 1400px) {
+}
